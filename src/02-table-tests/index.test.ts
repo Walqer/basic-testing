@@ -12,7 +12,7 @@ const testCases = [
 
 describe('simpleCalculator', () => {
   test.each(testCases)(
-    'should $action two numbers',
+    'calculating %d and %d with the %s operation should return %s',
     ({ a, b, action, expected }) => {
       const result = simpleCalculator({ a, b, action });
       expect(result).toBe(expected);
